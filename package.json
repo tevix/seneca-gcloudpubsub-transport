@@ -1,0 +1,33 @@
+{
+  "name": "seneca-gcloudpubsub-transport",
+  "version": "1.0.0",
+  "description": "Seneca GCLOUD pub/sub transport",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tevix/seneca-gcloudpubsub-transport.git"
+  },
+  "keywords": [
+    "seneca",
+    "gcloud",
+    "pubsub",
+    "pub/sub",
+    "transport",
+    "message",
+    "distribution",
+    "publish",
+    "subscribe",
+    "microservices"
+  ],
+  "author": "mchavarriae",
+  "license": "MIT",
+  "homepage": "http://github.com/tevix/seneca-gcloudpubsub-transport",
+  "dependencies": {
+    "@google-cloud/pubsub": "0.13.2",
+    "lodash": "4.17.4",
+    "nid": "0.3.2"
+  },
+  "devDependencies": {
+    "seneca": "1.1.x"
+  }
+}
