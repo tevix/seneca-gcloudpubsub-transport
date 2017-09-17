@@ -104,7 +104,7 @@ module.exports = function (options) {
   function createSubscription(topic, kind) {
     return new Promise(function (fulfill, reject) {
       var subscriber_name = topicPrefix + '.' + kind;
-      var subs_options = { autoAck: true };
+      var subs_options = { autoAck: false};
 
       pubsub.subscribe(topic, subscriber_name, subs_options,
         function (err, subscription) {
