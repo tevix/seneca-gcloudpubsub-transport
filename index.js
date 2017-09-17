@@ -148,7 +148,7 @@ module.exports = function (options) {
         });
 
         function onMessage(message) {
-          seneca.log.info('Got a request: ' + message.id);
+          // seneca.log.info('Got a request: ' + message.id);
 
           var content = message.data//message.data ? message.data.toString() : undefined;
           var data = tu.parseJSON(seneca, 'listen-' + type, content.data);
@@ -209,7 +209,7 @@ module.exports = function (options) {
         subscription.on('message', onMessage);
 
         function onMessage(message) {
-          seneca.log.info('Got a response: ' + message.id);
+          // seneca.log.info('Got a response: ' + message.id);
 
           var content = message.data;//message.data ? message.data.toString() : undefined;
           var input = tu.parseJSON(seneca, 'client-' + type, content.data);
