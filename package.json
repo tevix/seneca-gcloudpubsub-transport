@@ -1,6 +1,6 @@
 {
   "name": "seneca-gcloudpubsub-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Seneca GCLOUD pub/sub transport",
   "main": "index.js",
   "repository": {
