@@ -106,8 +106,8 @@ module.exports = function (options) {
             var subs_options = {
                 autoAck: false,
                 ackDeadlineSeconds: 10,
-                interval: 10,
-                maxInProgress: 10
+                interval: 20,
+                maxInProgress: 1
             };
 
             pubsub.subscribe(topic, subscriber_name, subs_options,
