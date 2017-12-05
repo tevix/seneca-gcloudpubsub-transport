@@ -105,8 +105,8 @@ module.exports = function (options) {
             var subscriber_name = topicPrefix + '.' + kind;
             var subs_options = {
                 autoAck: false,
-                ackDeadlineSeconds: 10,
-                interval: 20,
+                ackDeadlineSeconds: 20,
+                interval: 30,
                 maxInProgress: 1
             };
 
