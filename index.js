@@ -245,8 +245,8 @@ module.exports = function (options) {
                         return !this.has(args);
                     },
 
-                    send: function (args, done) {
-                        var outmsg = tu.prepare_request(this, args, done);
+                    send: function (args, done, meta) {
+                        var outmsg = tu.prepare_request(this, args, done, meta);
                         act_topic.publish({
                             data: tu.stringifyJSON(seneca, 'client-' + type, outmsg)
                         }, function (err) {
